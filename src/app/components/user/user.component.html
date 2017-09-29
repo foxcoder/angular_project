@@ -1,0 +1,42 @@
+<p>
+  user works!
+</p>
+<ul>
+  <li>{{id}}</li>
+  <li>{{fullName}}</li>
+  <li>{{email}}</li>
+  <li>{{post.body}}</li>
+
+  <p>hobbies</p>
+   <li *ngFor="let h of hobbies"> {{h}}</li>
+    
+</ul>
+
+
+
+  <label for="user name">fullName</label>
+  <input [(ngModel)]="fullName"  name="name"/>
+  <button (click) ="addOne()">click me</button>
+
+  
+  <!--<div>
+     <p>add hobby</p>
+     <form (submit)="addHobby(h.value)">
+      <label for="bobby">new hobby</label>
+      <input type="text" #h />
+     </form>
+  </div>
+-->
+
+<!--
+
+  <div>
+    <p>post</p>
+    <ul>
+   
+    <li>{{post.body}}</li>
+    </ul>
+ </div>
+
+-->
+
