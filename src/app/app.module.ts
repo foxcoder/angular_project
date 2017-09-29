@@ -2,12 +2,16 @@ import { UserService } from './services/user.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
+import {Routes, RouterModule} from "@angular/router";
 
-
+const routes: Routes =[
+{path:'', component:UserComponent},
+{path:'search', component:UserComponent}
+];
 
 @NgModule({
   declarations: [
@@ -17,7 +21,9 @@ import { UserComponent } from './components/user/user.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    
+    RouterModule.forRoot(routes, {useHash: true})
     
   ],
   providers: [UserService],

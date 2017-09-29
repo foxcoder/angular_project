@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Bill Xu notes
+
+1. install boostrap4
+npm install --save bootstrap@4.0.0-alpha.6 front-awsome
+
+add css into  style.css
+add js into  angular-cli.json
+"scripts": [
+    "../node_modules/jquery/dist/jquery.min.js",
+    "../node_modules/tether/dist/js/tether.min.js",        
+    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+],
+
